@@ -3,27 +3,52 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5719BD3723F02197001800F5 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5719BD3623F02197001800F5 /* Playlist.swift */; };
+		5719BD3923F11E29001800F5 /* Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5719BD3823F11E29001800F5 /* Videos.swift */; };
+		5724D0F723F663660094DED4 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5724D0F623F663660094DED4 /* Service.swift */; };
 		572C037523E0291600B950FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572C037423E0291600B950FE /* AppDelegate.swift */; };
 		572C037723E0291600B950FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572C037623E0291600B950FE /* SceneDelegate.swift */; };
-		572C037923E0291600B950FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572C037823E0291600B950FE /* ViewController.swift */; };
 		572C037C23E0291600B950FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572C037A23E0291600B950FE /* Main.storyboard */; };
 		572C037E23E0291C00B950FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 572C037D23E0291C00B950FE /* Assets.xcassets */; };
 		572C038123E0291C00B950FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572C037F23E0291C00B950FE /* LaunchScreen.storyboard */; };
+		572C038923E02F9E00B950FE /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572C038823E02F9E00B950FE /* TableViewController.swift */; };
+		572C039423E19BCF00B950FE /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572C039223E19BCF00B950FE /* CollectionViewCell.swift */; };
+		572C039823E19E6700B950FE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572C039623E19E6700B950FE /* TableViewCell.swift */; };
+		57545D1324182F5C009FF1CA /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57545D1224182F5C009FF1CA /* InfoViewController.swift */; };
+		57692A24240C60C200A7746E /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57692A23240C60C200A7746E /* VideoViewController.swift */; };
+		57DD315C2416873800F913AF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 57DD315B2416873800F913AF /* README.md */; };
+		57DD317A2416D1EF00F913AF /* ConfigureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD31792416D1EF00F913AF /* ConfigureData.swift */; };
+		5C6D898E87CB35C56A19675F /* libPods-mirea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 165D29211BCDA267B8AE81B9 /* libPods-mirea.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		572C037123E0291600B950FE /* amc-youtube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "amc-youtube.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		165D29211BCDA267B8AE81B9 /* libPods-mirea.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mirea.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		552AEB61201CAE0862F94841 /* Pods-mirea.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mirea.release.xcconfig"; path = "Target Support Files/Pods-mirea/Pods-mirea.release.xcconfig"; sourceTree = "<group>"; };
+		5719BD3623F02197001800F5 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		5719BD3823F11E29001800F5 /* Videos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videos.swift; sourceTree = "<group>"; };
+		5724D0F623F663660094DED4 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		572C037123E0291600B950FE /* mirea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mirea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		572C037423E0291600B950FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		572C037623E0291600B950FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		572C037823E0291600B950FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		572C037B23E0291600B950FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		572C037D23E0291C00B950FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		572C038023E0291C00B950FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		572C038223E0291C00B950FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		572C038823E02F9E00B950FE /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		572C039223E19BCF00B950FE /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		572C039623E19E6700B950FE /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		57545D1224182F5C009FF1CA /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		57692A23240C60C200A7746E /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		57DD315B2416873800F913AF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		57DD31792416D1EF00F913AF /* ConfigureData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureData.swift; sourceTree = "<group>"; };
+		67619BC491E737A61EF35F2A /* Pods-amc-youtube.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amc-youtube.debug.xcconfig"; path = "Target Support Files/Pods-amc-youtube/Pods-amc-youtube.debug.xcconfig"; sourceTree = "<group>"; };
+		96EADF57F8619BC2CECBC960 /* Pods-mirea.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mirea.debug.xcconfig"; path = "Target Support Files/Pods-mirea/Pods-mirea.debug.xcconfig"; sourceTree = "<group>"; };
+		CA9679E80776CE7313E4187E /* Pods-amc-youtube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amc-youtube.release.xcconfig"; path = "Target Support Files/Pods-amc-youtube/Pods-amc-youtube.release.xcconfig"; sourceTree = "<group>"; };
+		ECC9D6029C763EAAC86444A4 /* Pods_amc_youtube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_amc_youtube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,60 +56,102 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C6D898E87CB35C56A19675F /* libPods-mirea.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C14F4E5E8D1AA505BD20F6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67619BC491E737A61EF35F2A /* Pods-amc-youtube.debug.xcconfig */,
+				CA9679E80776CE7313E4187E /* Pods-amc-youtube.release.xcconfig */,
+				96EADF57F8619BC2CECBC960 /* Pods-mirea.debug.xcconfig */,
+				552AEB61201CAE0862F94841 /* Pods-mirea.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		572C036823E0291600B950FE = {
 			isa = PBXGroup;
 			children = (
-				572C037323E0291600B950FE /* amc-youtube */,
+				57DD315B2416873800F913AF /* README.md */,
+				572C037323E0291600B950FE /* mirea */,
 				572C037223E0291600B950FE /* Products */,
+				3C14F4E5E8D1AA505BD20F6C /* Pods */,
+				8B5E9C7820FA6462050D45FC /* Frameworks */,
+				577DC336242923BD00C66EF6 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
 		572C037223E0291600B950FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				572C037123E0291600B950FE /* amc-youtube.app */,
+				572C037123E0291600B950FE /* mirea.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		572C037323E0291600B950FE /* amc-youtube */ = {
+		572C037323E0291600B950FE /* mirea */ = {
 			isa = PBXGroup;
 			children = (
+				5719BD3623F02197001800F5 /* Playlist.swift */,
+				5719BD3823F11E29001800F5 /* Videos.swift */,
+				572C038823E02F9E00B950FE /* TableViewController.swift */,
+				572C039623E19E6700B950FE /* TableViewCell.swift */,
+				572C039223E19BCF00B950FE /* CollectionViewCell.swift */,
+				57692A23240C60C200A7746E /* VideoViewController.swift */,
+				5724D0F623F663660094DED4 /* Service.swift */,
+				57DD31792416D1EF00F913AF /* ConfigureData.swift */,
 				572C037423E0291600B950FE /* AppDelegate.swift */,
 				572C037623E0291600B950FE /* SceneDelegate.swift */,
-				572C037823E0291600B950FE /* ViewController.swift */,
 				572C037A23E0291600B950FE /* Main.storyboard */,
 				572C037D23E0291C00B950FE /* Assets.xcassets */,
 				572C037F23E0291C00B950FE /* LaunchScreen.storyboard */,
 				572C038223E0291C00B950FE /* Info.plist */,
+				57545D1224182F5C009FF1CA /* InfoViewController.swift */,
 			);
-			path = "amc-youtube";
+			path = mirea;
+			sourceTree = "<group>";
+		};
+		577DC336242923BD00C66EF6 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				ECC9D6029C763EAAC86444A4 /* Pods_amc_youtube.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		8B5E9C7820FA6462050D45FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				165D29211BCDA267B8AE81B9 /* libPods-mirea.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		572C037023E0291600B950FE /* amc-youtube */ = {
+		572C037023E0291600B950FE /* mirea */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 572C038523E0291C00B950FE /* Build configuration list for PBXNativeTarget "amc-youtube" */;
+			buildConfigurationList = 572C038523E0291C00B950FE /* Build configuration list for PBXNativeTarget "mirea" */;
 			buildPhases = (
+				B9D870785B07B4F6C3453391 /* [CP] Check Pods Manifest.lock */,
 				572C036D23E0291600B950FE /* Sources */,
 				572C036E23E0291600B950FE /* Frameworks */,
 				572C036F23E0291600B950FE /* Resources */,
+				A112E7BBB7DFB7F714FD166D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "amc-youtube";
+			name = mirea;
 			productName = "amc-youtube";
-			productReference = 572C037123E0291600B950FE /* amc-youtube.app */;
+			productReference = 572C037123E0291600B950FE /* mirea.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +169,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 572C036C23E0291600B950FE /* Build configuration list for PBXProject "amc-youtube" */;
+			buildConfigurationList = 572C036C23E0291600B950FE /* Build configuration list for PBXProject "mirea" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +182,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				572C037023E0291600B950FE /* amc-youtube */,
+				572C037023E0291600B950FE /* mirea */,
 			);
 		};
 /* End PBXProject section */
@@ -127,20 +194,71 @@
 			files = (
 				572C038123E0291C00B950FE /* LaunchScreen.storyboard in Resources */,
 				572C037E23E0291C00B950FE /* Assets.xcassets in Resources */,
+				57DD315C2416873800F913AF /* README.md in Resources */,
 				572C037C23E0291600B950FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A112E7BBB7DFB7F714FD166D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mirea/Pods-mirea-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mirea/Pods-mirea-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mirea/Pods-mirea-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9D870785B07B4F6C3453391 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mirea-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		572C036D23E0291600B950FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				572C037923E0291600B950FE /* ViewController.swift in Sources */,
+				572C039823E19E6700B950FE /* TableViewCell.swift in Sources */,
+				57545D1324182F5C009FF1CA /* InfoViewController.swift in Sources */,
+				5719BD3923F11E29001800F5 /* Videos.swift in Sources */,
+				57DD317A2416D1EF00F913AF /* ConfigureData.swift in Sources */,
+				57692A24240C60C200A7746E /* VideoViewController.swift in Sources */,
+				572C039423E19BCF00B950FE /* CollectionViewCell.swift in Sources */,
+				5719BD3723F02197001800F5 /* Playlist.swift in Sources */,
 				572C037523E0291600B950FE /* AppDelegate.swift in Sources */,
+				5724D0F723F663660094DED4 /* Service.swift in Sources */,
 				572C037723E0291600B950FE /* SceneDelegate.swift in Sources */,
+				572C038923E02F9E00B950FE /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,44 +400,50 @@
 		};
 		572C038623E0291C00B950FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96EADF57F8619BC2CECBC960 /* Pods-mirea.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VZVGW647BZ;
-				INFOPLIST_FILE = "amc-youtube/Info.plist";
+				INFOPLIST_FILE = mirea/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "unum.amc-youtube";
+				PRODUCT_BUNDLE_IDENTIFIER = unum.mirea;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		572C038723E0291C00B950FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 552AEB61201CAE0862F94841 /* Pods-mirea.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VZVGW647BZ;
-				INFOPLIST_FILE = "amc-youtube/Info.plist";
+				INFOPLIST_FILE = mirea/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "unum.amc-youtube";
+				PRODUCT_BUNDLE_IDENTIFIER = unum.mirea;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		572C036C23E0291600B950FE /* Build configuration list for PBXProject "amc-youtube" */ = {
+		572C036C23E0291600B950FE /* Build configuration list for PBXProject "mirea" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				572C038323E0291C00B950FE /* Debug */,
@@ -328,7 +452,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		572C038523E0291C00B950FE /* Build configuration list for PBXNativeTarget "amc-youtube" */ = {
+		572C038523E0291C00B950FE /* Build configuration list for PBXNativeTarget "mirea" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				572C038623E0291C00B950FE /* Debug */,
