@@ -24,11 +24,6 @@ class TableViewController: UITableViewController {
         loader.hidesWhenStopped = true
         loader.startAnimating()
         loadData()
-        myGroup.notify(queue: .main) {
-            self.loader.isHidden = true
-            self.refresh.endRefreshing()
-            self.tableView.reloadData()
-        }
         
         refresh.attributedTitle = NSAttributedString(string: "Обновляю. Минутку..")
         refresh.addTarget(self, action: #selector(loadData), for: .valueChanged)
@@ -40,14 +35,13 @@ class TableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Service.shared.playlistsData.count
+        return Service.shared.playlistGroups.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "idcell", for: indexPath) as! TableViewCell
-        cell.currentIndexPath = indexPath
-
-        cell.mytitle.text = Service.shared.labels[indexPath.row]
+        cell.playlistID = indexPath.row
+        cell.mytitle.text = Service.shared.playlistGroups[indexPath.row].first?.playlistTitle
         cell.selectionStyle = .none
         cell.tableViewlDelegate = self
         cell.reloadCollectionView()
@@ -59,7 +53,7 @@ class TableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toVideo"{
+        if segue.identifier == "toVideo" {
             let nextVC = segue.destination as! VideoViewController
             nextVC.titleVideo = sendTitleVideo
             nextVC.idVideo = sendIdVideo
@@ -70,21 +64,17 @@ class TableViewController: UITableViewController {
     @objc
     func loadData() {
         Service.shared.clear()
-        myGroup.enter()
+        tableView.reloadData()
 
         Service.shared.grabPlaylistsData { (playlists) in
             guard let playlists = playlists else { return }
-            
-            for playlist in playlists {
-                Service.shared.grabTitleAndVideos(for: playlist) { (videos) in
-                    guard let videos = videos else { return }
-                    
-                    Service.shared.grabMediaContent(for: videos) { (success) in
-                        
-                        if success && Service.shared.videoInfo.count == Service.shared.playlistsData.count {
-                            self.myGroup.leave()
-                        }
-                    }
+            var moviesCount = 0
+            playlists.items.forEach { moviesCount += $0.count }
+            Service.shared.grabMediaContent(for: playlists) { _ in
+                DispatchQueue.main.async {
+                    self.loader.isHidden = true
+                    self.refresh.endRefreshing()
+                    self.tableView.reloadData()
                 }
             }
         }

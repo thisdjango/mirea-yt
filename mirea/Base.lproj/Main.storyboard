@@ -13,17 +13,18 @@
         <!--MIREA-->
         <scene sceneID="2ep-gx-rh0">
             <objects>
-                <tableViewController id="32R-3i-fCS" customClass="TableViewController" customModule="amc_youtube" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="32R-3i-fCS" customClass="TableViewController" customModule="mirea" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" tag="16" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qr7-OF-xlD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="Y5b-V8-8ro">
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" id="Y5b-V8-8ro">
                             <rect key="frame" x="0.0" y="308" width="414" height="148"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="color" systemColor="labelColor"/>
                         </activityIndicatorView>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationLevel="2" indentationWidth="10" reuseIdentifier="idcell" rowHeight="230" id="yeW-mZ-AFC" customClass="TableViewCell" customModule="amc_youtube" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationLevel="2" indentationWidth="10" reuseIdentifier="idcell" rowHeight="230" id="yeW-mZ-AFC" customClass="TableViewCell" customModule="mirea" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="414" height="230"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yeW-mZ-AFC" id="mYi-VO-KJu">
@@ -32,6 +33,7 @@
                                     <subviews>
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3sN-X0-rxK">
                                             <rect key="frame" x="20" y="47" width="394" height="174"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="174" id="N9c-Ie-BWB"/>
                                             </constraints>
@@ -42,7 +44,7 @@
                                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             </collectionViewFlowLayout>
                                             <cells>
-                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="collectionCell" id="cTO-IL-K0q" customClass="CollectionViewCell" customModule="amc_youtube" customModuleProvider="target">
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="collectionCell" id="cTO-IL-K0q" customClass="CollectionViewCell" customModule="mirea" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="-3" width="204" height="180"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="j0n-fq-RI9">
@@ -146,7 +148,7 @@
         <!--Video View Controller-->
         <scene sceneID="lOn-U1-aQW">
             <objects>
-                <viewController id="yVC-6s-Ssk" customClass="VideoViewController" customModule="amc_youtube" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yVC-6s-Ssk" customClass="VideoViewController" customModule="mirea" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iH2-PV-Edi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -247,7 +249,7 @@
         <!--Info View Controller-->
         <scene sceneID="LUb-br-J60">
             <objects>
-                <viewController id="MdW-BM-xcf" customClass="InfoViewController" customModule="amc_youtube" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="MdW-BM-xcf" customClass="InfoViewController" customModule="mirea" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SLr-5t-iup">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
